@@ -5,6 +5,8 @@
  */
 package org.japo.java.app;
 
+import org.japo.java.entities.Cafetera;
+
 
 
 /**
@@ -14,6 +16,9 @@ package org.japo.java.app;
 public final class App {
 
     public void launchapp() {
-        
+        Cafetera c1 = new Cafetera();
+        Cafetera c2 = new Cafetera(Cafetera.TE);
+        System.out.println(c1.getServicio());
+        System.out.println(c2.getServicio());
     }
 }
